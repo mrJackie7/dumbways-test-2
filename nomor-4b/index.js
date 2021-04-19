@@ -39,7 +39,7 @@ app.use(fileUpload());
 // Route for homepage
 app.get("/", (req, res) => {
   let sql = [
-    "SELECT book_tb.book_id, book_tb.book_name, category_tb.category_id ,category_tb.category_name, writer_tb.writer_id, writer_tb.writter_name, book_tb.publication_year, book_tb.img_url FROM book_tb INNER JOIN category_tb on book_tb.category_id = category_tb.category_id INNER JOIN writer_tb on book_tb.writer_id = writer_tb.writer_id",
+    "SELECT book_tb.book_id, book_tb.book_name, category_tb.category_id ,category_tb.category_name, writer_tb.writer_id, writer_tb.writter_name, book_tb.publication_year, book_tb.img_url FROM book_tb INNER JOIN category_tb on book_tb.category_id = category_tb.category_id INNER JOIN writer_tb on book_tb.writer_id = writer_tb.writer_id ORDER BY book_tb.book_id DESC",
     "SELECT * FROM category_tb",
     "SELECT * FROM writer_tb",
   ];
@@ -133,7 +133,6 @@ app.post("/update", (req, res) => {
 });
 
 app.post("/delete", (req, res) => {
-  console.log(Number(req.body.book_id));
   let sql = `DELETE FROM book_tb WHERE book_id=${req.body.book_id}`;
   let query = conn.query(sql, (err, results) => {
     if (err) throw err;

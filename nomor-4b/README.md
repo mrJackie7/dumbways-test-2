@@ -25,4 +25,30 @@ View Engine: hbs(Handlebars, sebuah view engine untuk menampilkan hasil response
 
 ## Penjelasan isi berupa gambar
 
+### Halaman Utama
+
 ![image1](./screenshoot-4b/main-views.jpg)
+
+### Tambah Buku
+
+![image1](./screenshoot-4b/add-book.jpg)
+
+### Tambah Penulis
+
+![image1](./screenshoot-4b/add-writer.jpg)
+
+### Tambah Kategori
+
+![image1](./screenshoot-4b/add-category.jpg)
+
+### Lihat Deskripsi Buku
+
+![image1](./screenshoot-4b/view-book.jpg)
+
+### Edit Isi Buku
+
+![image1](./screenshoot-4b/edit-book.jpg)
+
+### Delete Buku
+
+![image1](./screenshoot-4b/delet-book.jpg)

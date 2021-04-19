@@ -21,6 +21,7 @@ const trianglePrime = (n) => {
 const prime = (num) => {
   let flag;
   for (let i = 2; i < num; i++) {
+    //flag = num % i != 0 ? 1 : 0;
     if (num % i != 0) {
       flag = 1;
     } else {
